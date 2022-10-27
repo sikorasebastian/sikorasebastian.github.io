@@ -1,0 +1,14 @@
+h1,
+h2 {
+  font-family: Lato;
+}
+.main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+img {
+    height: 300px;
+    width: auto;
+    max-width: 300px;
+    max-height: 300px;
+}

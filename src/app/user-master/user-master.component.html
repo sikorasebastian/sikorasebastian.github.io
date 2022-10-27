@@ -1,1 +1,18 @@
-<p>user-master works!</p>
+<div class="main">
+<section>
+  <h1>Dog-instagram</h1>
+  <select (change)="onSelected($event)">
+    <option selected disabled>--Please choose a dog--</option>
+    <option *ngFor = "let dog of dogList"> {{ dog }}</option>
+  </select>
+</section>
+
+<section>
+  <figure>
+    <img [src]="imageURL"/>
+    <figcaption>More information about this breed can be found here:<br>
+      <a [href]=selectedDogURL>{{selectedDog}}</a>
+    </figcaption>
+  </figure>
+</section>
+</div>
